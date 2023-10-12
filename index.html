@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Count De Money</title>
+</head>
+<body onload = "init();">
+    <font size = "10">
+    <table>
+        <tr>
+            <td>-----------</td>
+            <td>Quarters</td>
+            <td>Dimes</td>
+            <td>Nickles</td>
+            <td>Pennies</td>
+        </tr>
+        <tr>
+            <td>Amount:</td>
+            <td><h2 id = "quarter#"></h2>
+                <button onclick="add('q');">Add</button>
+                <button onclick="sub('q');">Sub</button>
+            </td>
+            <td><h2 id = "dime#"></h2>
+                <button onclick="add('d');">Add</button>
+                <button onclick="sub('d');">Sub</button>
+            </td>
+            <td><h2 id = "nickle#"></h2>
+                <button onclick="add('n');">Add</button>
+                <button onclick="sub('n');">Sub</button>
+            </td>
+            <td><h2 id = "penny#"></h2>
+                <button onclick="add('p');">Add</button>
+                <button onclick="sub('p');">Sub</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Value:</td>
+            <td><h2 id = quarter$></h2></td>
+            <td><h2 id = dime$></h2></td>
+            <td><h2 id = nickle$></h2></td>
+            <td><h2 id = penny$></h2></td>
+        </tr>
+    </font>
+    </table>
+
+    <font size = "25">
+    <table>
+        <tr>
+            <td>Total:</td>
+            <td><h2 id = total></h2></td>
+        </tr>
+    </font>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
